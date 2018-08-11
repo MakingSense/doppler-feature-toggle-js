@@ -1,0 +1,20 @@
+{
+  "name": "doppler-feature-toggle",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Andrés Moschini <amoschini@makingsense.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MakingSense/doppler-feature-toggle-js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.3",
+    "ts-node": "^6.0.0",
+    "typescript": "^2.6.2"
+  }
+}
