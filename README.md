@@ -18,9 +18,10 @@ Nothing useful to use yet.
 
 - `yarn run test`: Run test suite
 - `yarn run test:watch`: Run test suite in [interactive watch mode](http://facebook.github.io/jest/docs/cli.html#watch)
-- `yarn run test:prod`: Run tests, format validator, linting and generate coverage (not yet)
+- `yarn run test:prod`: Run tests, format validator, lint analysis and generate coverage (not yet)
 - `yarn run build`: Generate bundles and typings, create docs
 - `yarn run start`: Run build in watch mode
+- `yarn run lint`: Run lint analysis with TSLint
 
 ### Using with Docker
 
