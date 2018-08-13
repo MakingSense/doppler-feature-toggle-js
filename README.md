@@ -1,3 +1,5 @@
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 # Doppler Feature Toggle JavaScript Client
 
 JavaScript client of our simple feature toggle system based on a JSON file over HTTP.
@@ -22,6 +24,7 @@ Nothing useful to use yet.
 - `yarn run build`: Generate bundles and typings, create docs
 - `yarn run start`: Run build in watch mode
 - `yarn run lint`: Run lint analysis with TSLint
+- `yarn run prettier`: Run [Prettier](https://prettier.io/) code formatter
 
 ### Using with Docker
 

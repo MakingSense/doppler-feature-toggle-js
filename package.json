@@ -20,6 +20,7 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "prettier": "prettier --write \"{src,test}/**/*.ts\"",
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
@@ -53,11 +54,16 @@
     },
     "collectCoverage": true
   },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true
+  },
   "devDependencies": {
     "@types/jest": "^22.0.0",
     "@types/node": "^10.5.8",
     "jest": "^22.0.2",
     "lodash.camelcase": "^4.3.0",
+    "prettier": "^1.14.2",
     "rimraf": "^2.6.1",
     "rollup": "^0.59.2",
     "rollup-plugin-commonjs": "^9.1.5",
