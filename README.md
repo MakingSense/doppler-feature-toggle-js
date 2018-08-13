@@ -14,6 +14,12 @@ Nothing useful to use yet.
 
 ## Development
 
+### Yarn scripts
+
+- `yarn run test`: Run test suite
+- `yarn run test:watch`: Run test suite in [interactive watch mode](http://facebook.github.io/jest/docs/cli.html#watch)
+- `yarn run test:prod`: Run tests, format validator, linting and generate coverage (not yet)
+
 ### Architecture and other decisions
 
 It is based on [TypeScript library starter](https://github.com/alexjoverm/typescript-library-starter), but in place of using it as it is, the project has been created from the scratch and taking different decisions.
