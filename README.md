@@ -1,3 +1,5 @@
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 # Doppler Feature Toggle JavaScript Client
 
 JavaScript client of our simple feature toggle system based on a JSON file over HTTP.
