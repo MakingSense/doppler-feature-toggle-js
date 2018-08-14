@@ -57,3 +57,9 @@ I will use [Angular's Commit Message Guidelines](https://github.com/angular/angu
 I like using rebase and merge, without squashing commits, I am not sure if it will work fine with semantic release, let's try.
 
 Thanks to @stirelli for helping me with it.
+
+### Bundles and distribution
+
+_TypeScript library starter_ has building UMD and ES5 bundles out of the box, but I also want to use my library by linking the script file from a CDN source and Rollup is ready for that. 
+
+I have configured it using [the convention described by Axel Rauschmayer](http://2ality.com/2017/04/setting-up-multi-platform-packages.html#browser-browser-specific-code)
