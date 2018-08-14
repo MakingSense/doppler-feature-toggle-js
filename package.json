@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "dist/doppler-feature-toggle.umd.js",
   "module": "dist/doppler-feature-toggle.es5.js",
+  "browser": "dist/doppler-feature-toggle.client.js",
   "typings": "dist/types/doppler-feature-toggle.d.ts",
   "files": [
     "dist"
