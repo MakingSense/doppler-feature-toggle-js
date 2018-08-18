@@ -22,6 +22,10 @@ Nothing useful to use yet.
 - `yarn run build`: Generate bundles and typings
 - `yarn run start`: Run build in watch mode
 
+### Using with Docker
+
+- `sh ./build-w-docker.sh`: Execute `yarn run test:prod` into a Docker Node container.
+
 ### Architecture and other decisions
 
 It is based on [TypeScript library starter](https://github.com/alexjoverm/typescript-library-starter), but in place of using it as it is, the project has been created from the scratch and taking different decisions.
