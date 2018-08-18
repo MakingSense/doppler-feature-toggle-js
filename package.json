@@ -3,6 +3,13 @@
   "version": "0.0.0",
   "description": "",
   "keywords": [],
+  "main": "dist/doppler-feature-toggle.umd.js",
+  "module": "dist/doppler-feature-toggle.es5.js",
+  "browser": "dist/doppler-feature-toggle.client.js",
+  "typings": "dist/types/doppler-feature-toggle.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": "Andrés Moschini <amoschini@makingsense.com>",
   "repository": {
     "type": "git",
@@ -13,6 +20,9 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "start": "rollup -c rollup.config.ts -w",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:prod": "yarn run test --coverage --no-cache"
@@ -46,6 +56,14 @@
     "@types/jest": "^22.0.0",
     "@types/node": "^10.5.8",
     "jest": "^22.0.2",
+    "lodash.camelcase": "^4.3.0",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.59.2",
+    "rollup-plugin-commonjs": "^9.1.5",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.11.1",
     "ts-jest": "^22.0.0",    
     "ts-node": "^6.0.0",
     "typescript": "^2.6.2"
