@@ -20,12 +20,15 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "prettier": "prettier --write \"{src,test}/**/*.ts\"",
+    "prettier-check": "prettier-check \"{src,test}/**/*.ts\"",
+    "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:prod": "yarn run test --coverage --no-cache"
+    "test:prod": "yarn run prettier-check && yarn run lint && yarn run test --coverage --no-cache"
   },
   "jest": {
     "testEnvironment": "node",
@@ -52,11 +55,17 @@
     },
     "collectCoverage": true
   },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true
+  },
   "devDependencies": {
     "@types/jest": "^22.0.0",
     "@types/node": "^10.5.8",
     "jest": "^22.0.2",
     "lodash.camelcase": "^4.3.0",
+    "prettier": "^1.14.2",
+    "prettier-check": "^2.0.0",
     "rimraf": "^2.6.1",
     "rollup": "^0.59.2",
     "rollup-plugin-commonjs": "^9.1.5",
@@ -66,6 +75,9 @@
     "rollup-plugin-typescript2": "^0.11.1",
     "ts-jest": "^22.0.0",    
     "ts-node": "^6.0.0",
-    "typescript": "^2.6.2"
+    "typedoc": "^0.11.0",    
+    "typescript": "^2.6.2",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.9.2"
   }
 }
