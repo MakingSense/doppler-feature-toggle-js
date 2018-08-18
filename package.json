@@ -20,12 +20,13 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:prod": "yarn run test --coverage --no-cache"
+    "test:prod": "yarn run lint && yarn run test --coverage --no-cache"
   },
   "jest": {
     "testEnvironment": "node",
@@ -66,6 +67,9 @@
     "rollup-plugin-typescript2": "^0.11.1",
     "ts-jest": "^22.0.0",    
     "ts-node": "^6.0.0",
-    "typescript": "^2.6.2"
+    "typedoc": "^0.11.0",    
+    "typescript": "^2.6.2",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.9.2"
   }
 }
