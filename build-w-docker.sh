@@ -1,5 +1,12 @@
 #!/bin/sh
 
+echo TESSSST!!
+echo BRANCH_NAME $1
+echo CHANGE_ID $2
+echo BUILD_TAG $3
+echo GIT_BRANCH $4
+echo GIT_COMMIT $5
+
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
