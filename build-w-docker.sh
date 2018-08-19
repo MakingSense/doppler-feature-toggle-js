@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo TESSSST!
+echo TESSSST!!
 echo BRANCH_NAME $1
 echo CHANGE_ID $2
 echo BUILD_TAG $3
