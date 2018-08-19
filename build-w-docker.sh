@@ -1,10 +1,10 @@
 #!/bin/sh
 
-echo BRANCH_NAME $BRANCH_NAME 
-echo CHANGE_ID $CHANGE_ID 
-echo BUILD_TAG $BUILD_TAG 
-echo GIT_BRANCH $GIT_BRANCH 
-echo GIT_COMMIT $GIT_COMMIT
+echo BRANCH_NAME $1
+echo CHANGE_ID $2
+echo BUILD_TAG $3
+echo GIT_BRANCH $4
+echo GIT_COMMIT $5
 
 # Exit immediately if a command exits with a non-zero status.
 set -e
