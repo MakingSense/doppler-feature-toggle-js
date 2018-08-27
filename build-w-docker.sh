@@ -10,7 +10,7 @@ cd $(dirname $0)
 docker run --rm \
     -v /`pwd`:/work \
     -w /work \
-    node:6-alpine \
+    node:8 \
     /bin/sh -c "\
         yarn \
         && yarn run test:prod \
