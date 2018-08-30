@@ -1,4 +1,4 @@
 // Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
 // import "core-js/fn/array.find"
 // ...
-export { Dummy } from './dummy';
+export { RefFeatureToggleClient } from './refFeatureToggleClient';
