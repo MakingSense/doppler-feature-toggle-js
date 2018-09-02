@@ -28,8 +28,7 @@
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:prod": "yarn run prettier-check && yarn run lint && yarn run test --coverage --no-cache",
-    "semantic-release": "semantic-release"
+    "test:prod": "yarn run prettier-check && yarn run lint && yarn run test --coverage --no-cache"
   },
   "jest": {
     "testEnvironment": "node",
