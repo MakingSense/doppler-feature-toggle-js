@@ -60,6 +60,7 @@
     "singleQuote": true
   },
   "release": {
+    "branch": "test-semantic-release",
     "noCi": true,
     "debug": true,
     "verifyConditions": [
