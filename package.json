@@ -60,6 +60,50 @@
     "semi": true,
     "singleQuote": true
   },
+  "release": {
+    "dryRun": false,
+    "noCi": true,
+    "debug": true,
+    "verifyConditions": [
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ],
+    "analyzeCommits": [
+      "@semantic-release/commit-analyzer"
+    ],
+    "generateNotes": [
+      "@semantic-release/release-notes-generator"
+    ],
+    "prepare": [
+      "@semantic-release/npm"
+    ],
+    "publish": [
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/github",
+        "assets": [
+          {
+            "path": "dist/doppler-feature-toggle.client.js",
+            "label": "Browser distribution"
+          },
+          {
+            "path": "dist/doppler-feature-toggle.es5.js",
+            "label": "ES5 distribution"
+          },
+          {
+            "path": "dist/doppler-feature-toggle.umd.js",
+            "label": "UMD distribution"
+          }
+        ]
+      }
+    ],
+    "success": [
+      "@semantic-release/github"
+    ],
+    "fail": [
+      "@semantic-release/github"
+    ]
+  },
   "devDependencies": {
     "@types/jest": "^22.0.0",
     "@types/node": "^10.5.8",
